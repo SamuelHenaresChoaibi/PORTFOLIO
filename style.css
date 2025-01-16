@@ -1,0 +1,78 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    gap: 25px;
+}
+
+.accordion-item img{
+    padding-left: 250px;
+}
+
+.perfil-arriba{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url("Imagenes/code.gif");
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.perfil-arriba h1{
+    padding: 20px;
+    position: relative;
+    left: 450px;
+}
+
+.perfil-arriba img{
+    padding: 20px;
+    position: relative;
+    left: 525px;
+}
+
+.perfil-arriba p{
+    font-size: 20px;
+    color: rgb(218, 214, 214);
+    font-weight: 100px;
+    padding: 30px;
+}
+
+.perfil-arriba button{
+    font-size: 20px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-weight: 300px;
+    border-color: white;
+}
+
+
+
+.accordion-body{
+
+    font-weight: 500;
+    padding: 100px;
+}
+
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.font-extrabold {
+    font-weight: 800;
+}
+
+.text-\[55px\] {
+    font-size: 55px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.max-w-screen-sm {
+    max-width: 640px;
+}
+

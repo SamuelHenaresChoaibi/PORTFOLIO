@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+  <meta name="author" content="Samuel Henares Choaibi"><!-- Define el autor del documento -->
+  <meta name="description" content="Portfolio - Samuel Henares Choaibi">
+  <!-- Proporciona una descripción del contenido del documento para SEO -->
+
+  <meta property="og:url" content="Nuevos Conceptos HTML-Samuel Henares Choaibi">
+  <!-- Define la URL del documento para Open Graph (redes sociales) -->
+
+  <meta name="robots" content="index, follow">
+  <!-- Indica a los motores de búsqueda que indexen la página, debería ser 'index, follow' -->
+
+  <meta name="keywords" content="Samuel Henares Choaibi, CSS, SCSS, HTML, Bootstrap, Portfolio">
+  <!-- Palabras clave para SEO -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configura la ventana gráfica para un diseño responsive -->
+
+  <link rel="icon" href="Imagenes/author.png">
+  <!-- Define el logo -->
+
+  <title>Samuel Henares Choaibi</title>
+  <!-- Define el título del documento que aparece en la pestaña del navegador -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.scss">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="./output.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b>Samuel Henares Choaibi</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a id="Biografía" class="nav-link active" aria-current="page" href="#">Biografía</a>
+          </li>
+          <li class="nav-item">
+            <a id="CV" class="nav-link active" aria-current="page" href="#">CV</a>
+          </li>
+          <li class="nav-item dropdown">
+          </li>
+          <li class="nav-item">
+            <a id="Proyectos" class="nav-link active" aria-current="page" href="#">Proyectos futuros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"></a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Perfil e información -->
+  <div class="perfil-arriba">
+    
+    <img src="Imagenes/author.png" alt="Authpr">
+    <div class="flex min-h-screen bg-[#161513]">
+      <div class="mx-auto">
+        <img src="https://i.imgur.com/4U5tBXC.png" alt="" />
+        <h1 class="max-w-screen-sm text-center text-[55px] font-extrabold text-white">
+          Desarrollo de <br />
+          Aplicaciones <span
+            class="text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">Multiplataforma</span>
+        </h1>
+        <p class="text-center">Me llamo Samuel Henares Choaibi, estudiante del CFGS de DAM, o más conocido como
+          Desarrollo de Aplicaciones Multiplataforma. Estoy estudiando el primer año del grado, donde estoy aprendiendo
+          conceptos fundamentales sobre el desarrollo de software, diseño de aplicaciones, bases de datos y programación
+          en diversos lenguajes como Java, JavaScript, SQL...</p>
+        <div class="text-center">
+          <button class="font-extrabold">Contacto</button>
+          <button class="font-extrabold">CV en PDF</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carrusel proyectos -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Imagenes/nintendo.jpg" class="d-block w-100" alt="Emulador 64">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Emulador de Juegos Retro</h5>
+          <p>Proyecto de emulador con C++ y Raspberry Pi</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/kali.png" class="d-block w-100" alt="Kali Linux">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Software de Hacking Personal</h5>
+          <p>Software privado personal con herramientas para implementar dentro del ordenador o móvil</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/robot.jpg" class="d-block w-100" alt="Robot">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Mini Robot a Control</h5>
+          <p>Robot controlado por a través de un programa para móvil</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Card -->
+  <div class="card-grid">
+    <div class="card" class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+      <img src="Imagenes/sam.jpg" class="card-img-top" alt="samuel-henares-choaibi" width="25%">
+      <div class="card-body">
+        <h5 class="card-title">¿Quién soy?</h5>
+        <p class="card-text">Mi nombre es Samuel Henares Choaibi, estudiante de primer año en Grado Superior de
+          Desarrollo de Aplicaciones Multiplataforma en el CIFP Pau Casesnoves.</p>
+        <a href="#" class="btn btn-primary">Biografía</a>
+        <a href="#" class="btn btn-primary">CV</a>
+      </div>
+    </div>
+
+    <div class="card" class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+      <img src="Imagenes/prog.gif" class="card-img-top" alt="código" width="25%">
+      <div class="card-body">
+        <h5 class="card-title">Código y scripts personales</h5>
+        <p class="card-text">Códigos fuente de proyectos grandes y trabajos sencillos de lo que iré haciendo con todas
+          las especificaciones.</p>
+        <a href="#" class="btn btn-primary">Código y Proyectos</a>
+      </div>
+    </div>
+
+    <div class="card" class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+      <img src="Imagenes/uib.jpg" class="card-img-top" alt="experiencia-académica" width="25%">
+      <div class="card-body">
+        <h5 class="card-title">Experiencia Académica</h5>
+        <ul class="card-text">
+          <li><b>ESO:</b> IES Moll Vell (2017 - 2021)</li>
+          <li><b>Bachillerato de Ciencias Tecnológicas:</b> IES Alcudia (2021 - 2023)</li>
+          <li><b>Ingeniería Informática:</b> UIB (2023 - 2024)</li>
+          <li><b>DAM:</b> CIFP Pau Casesnoves (2024 - cursando actualmente)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <!-- Accordion -->
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          <b>CV</b>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <img src="Imagenes/CV Samuel Henares Choaibi.jpg" alt="CV" width="75%">
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          <b>Biografía</b>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Me llamo Samuel Henares Choaibi, estudiante del CFGS de DAM, o más conocido como Desarrollo de Aplicaciones
+            Multiplataforma. Estoy estudiando el primer año del grado, donde estoy aprendiendo conceptos fundamentales
+            sobre el desarrollo de software, diseño de aplicaciones, bases de datos y programación en diversos lenguajes
+            como Java, Kotlin y SQL.</p>
+
+          <p>Desde siempre, me ha apasionado la tecnología y la manera en que las aplicaciones pueden transformar la
+            vida
+            cotidiana. Mi objetivo es convertirme en un desarrollador versátil, capaz de crear soluciones innovadoras y
+            adaptables para diferentes plataformas y dispositivos.</p>
+
+          <p>Además, estoy trabajando en un proyecto personal que combina mi pasión por los videojuegos y la tecnología.
+            Estoy diseñando un emulador de consolas que permita ejecutar y cambiar entre diferentes plataformas y
+            videojuegos de manera eficiente. Para ello, planeo utilizar una Raspberry Pi como base, aplicando los
+            conocimientos adquiridos durante mi formación y explorando nuevos desafíos técnicos.</p>
+
+          <p>Mi enfoque siempre ha sido el aprendizaje continuo y el esfuerzo por superarme día a día. Estoy
+            entusiasmado
+            por todo lo que está por venir en esta etapa educativa y por las oportunidades de contribuir al mundo del
+            desarrollo de software.</p>
+
+          <p>Para cuando acabe el grado, me especializaré en Ciberseguridad en Entornos de las Tecnologías de la
+            Información, ya que lo que más me apasiona es el Hacking y la Ciberseguridad en el mundo de la Informática,
+            aunque me gusta mucho fusionar varios campos para hacer proyectos elaborados. Para Ciberseguridad me gustaría desarrollar un programa personal para mí para uso personal.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+          overriding our default variables. It's also worth noting that just about any HTML can go within the
+          <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>
