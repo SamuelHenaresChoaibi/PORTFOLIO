@@ -72,25 +72,30 @@
 
   <!-- Perfil e información -->
   <div class="perfil-arriba">
-    
-    <img src="Imagenes/author.png" alt="Authpr">
-    <div class="flex min-h-screen bg-[#161513]">
-      <div class="mx-auto">
-        <img src="https://i.imgur.com/4U5tBXC.png" alt="" />
-        <h1 class="max-w-screen-sm text-center text-[55px] font-extrabold text-white">
-          Desarrollo de <br />
-          Aplicaciones <span
-            class="text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">Multiplataforma</span>
-        </h1>
-        <p class="text-center">Me llamo Samuel Henares Choaibi, estudiante del CFGS de DAM, o más conocido como
-          Desarrollo de Aplicaciones Multiplataforma. Estoy estudiando el primer año del grado, donde estoy aprendiendo
-          conceptos fundamentales sobre el desarrollo de software, diseño de aplicaciones, bases de datos y programación
-          en diversos lenguajes como Java, JavaScript, SQL...</p>
-        <div class="text-center">
-          <button class="font-extrabold">Contacto</button>
-          <button class="font-extrabold">CV en PDF</button>
+    <div class="author-title">
+      <div class="author">
+        <img src="Imagenes/author.png" alt="Authpr">
+      </div>
+      <div class="flex min-h-screen bg-[#161513]">
+        <div class="mx-auto">
+          <h1 class="max-w-screen-sm text-center text-[55px] font-extrabold text-white">
+            Desarrollo de <br />
+            Aplicaciones <span
+              class="text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">Multiplataforma</span>
+          </h1>
         </div>
       </div>
+    </div>
+
+    <p class="text-center">Me llamo Samuel Henares Choaibi, estudiante del CFGS de DAM, o más conocido como
+      Desarrollo de Aplicaciones Multiplataforma. Estoy estudiando el primer año del grado, donde estoy
+      aprendiendo
+      conceptos fundamentales sobre el desarrollo de software, diseño de aplicaciones, bases de datos y
+      programación
+      en diversos lenguajes como Java, JavaScript, SQL...</p>
+    <div class="text-center">
+      <button class="font-extrabold">Contacto</button>
+      <button class="font-extrabold">CV en PDF</button>
     </div>
   </div>
 
@@ -104,7 +109,12 @@
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
     </div>
+
+
+    <!-- Proyectos -->
+
     <div class="carousel-inner">
+      <!-- Emulador -->
       <div class="carousel-item active">
         <img src="Imagenes/nintendo.jpg" class="d-block w-100" alt="Emulador 64">
         <div class="carousel-caption d-none d-md-block">
@@ -112,6 +122,9 @@
           <p>Proyecto de emulador con C++ y Raspberry Pi</p>
         </div>
       </div>
+
+      <!-- Software de Hacking -->
+
       <div class="carousel-item">
         <img src="Imagenes/kali.png" class="d-block w-100" alt="Kali Linux">
         <div class="carousel-caption d-none d-md-block">
@@ -119,6 +132,9 @@
           <p>Software privado personal con herramientas para implementar dentro del ordenador o móvil</p>
         </div>
       </div>
+
+      <!-- Robot -->
+
       <div class="carousel-item">
         <img src="Imagenes/robot.jpg" class="d-block w-100" alt="Robot">
         <div class="carousel-caption d-none d-md-block">
@@ -138,7 +154,7 @@
   </div>
 
 
-  <!-- Card -->
+  <!-- Cards -->
   <div class="card-grid">
     <div class="card" class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
       <img src="Imagenes/sam.jpg" class="card-img-top" alt="samuel-henares-choaibi" width="25%">
@@ -179,6 +195,7 @@
 
 
   <!-- Accordion -->
+  <!-- CV -->
   <div class="accordion" id="accordionExample">
     <div class="accordion-item">
       <h2 class="accordion-header">
@@ -188,11 +205,14 @@
         </button>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <img src="Imagenes/CV Samuel Henares Choaibi.jpg" alt="CV" width="75%">
+        <div class="cv">
+          <img src="Imagenes/CV Samuel Henares Choaibi.jpg" alt="CV">
         </div>
       </div>
     </div>
+
+    <!-- Biografía -->
+
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
@@ -202,10 +222,11 @@
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          <p>Me llamo Samuel Henares Choaibi, estudiante del CFGS de DAM, o más conocido como Desarrollo de Aplicaciones
+          <p>Me llamo <b>Samuel Henares Choaibi</b>, estudiante del CFGS de DAM, o más conocido como Desarrollo de
+            Aplicaciones
             Multiplataforma. Estoy estudiando el primer año del grado, donde estoy aprendiendo conceptos fundamentales
             sobre el desarrollo de software, diseño de aplicaciones, bases de datos y programación en diversos lenguajes
-            como Java, Kotlin y SQL.</p>
+            como <b>Java, JavaScript y SQL</b>.</p>
 
           <p>Desde siempre, me ha apasionado la tecnología y la manera en que las aplicaciones pueden transformar la
             vida
@@ -222,31 +243,63 @@
             por todo lo que está por venir en esta etapa educativa y por las oportunidades de contribuir al mundo del
             desarrollo de software.</p>
 
-          <p>Para cuando acabe el grado, me especializaré en Ciberseguridad en Entornos de las Tecnologías de la
-            Información, ya que lo que más me apasiona es el Hacking y la Ciberseguridad en el mundo de la Informática,
-            aunque me gusta mucho fusionar varios campos para hacer proyectos elaborados. Para Ciberseguridad me gustaría desarrollar un programa personal para mí para uso personal.
+          <p>Para cuando acabe el grado, me especializaré en <b>Ciberseguridad en Entornos de las Tecnologías de la
+              Información</b>, ya que lo que más me apasiona es el Hacking y la Ciberseguridad en el mundo de la
+            Informática,
+            aunque me gusta mucho fusionar varios campos para hacer proyectos elaborados. Para Ciberseguridad me
+            gustaría desarrollar un programa personal para mí para uso personal.
           </p>
         </div>
       </div>
     </div>
+
+    <!-- Skills -->
+
+
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Accordion Item #3
+          <b>Skills</b>
         </button>
       </h2>
       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
+          <h3><strong>Conocimientos informáticos</strong></h3>
+          <ul>
+            <li>Java
+            </li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>mySQL</li>
+            <li>Buenas prácticas con Visual Studio Code, IntelliJ IDEA Community, GitHub Desktop, PyCharm y NetBeans
+            </li>
+            <li>Hoja de Cálculo</li>
+            <li>Comandos básicos en terminal Linux</li>
+            <li>Comandos básicos en terminal Windows</li>
+          </ul>
+
+          <br>
+          <h3><strong>Habilidades</strong></h3>
+          <ul>
+            <li>Liderazgo</li>
+            <li>Cálculo rápido</li>
+            <li>Buena lógica y razonamiento</li>
+            <li>Compañerismo</li>
+            <li>Trabajo en equipo</li>
+            <li>Responsable</li>
+            <li>Paciente</li>
+            <li>Tranquilo</li>
+          </ul>
+
         </div>
       </div>
     </div>
   </div>
+
+
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

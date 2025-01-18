@@ -5,11 +5,11 @@
     gap: 25px;
 }
 
-.accordion-item img{
+.accordion-item img {
     padding-left: 250px;
 }
 
-.perfil-arriba{
+.perfil-arriba {
     display: grid;
     grid-template-columns: 1fr;
     background-image: url("Imagenes/code.gif");
@@ -18,26 +18,26 @@
     padding: 50px;
 }
 
-.perfil-arriba h1{
+.perfil-arriba h1 {
     padding: 20px;
     position: relative;
     left: 450px;
 }
 
-.perfil-arriba img{
+.perfil-arriba img {
     padding: 20px;
     position: relative;
-    left: 525px;
+    left: 550px;
 }
 
-.perfil-arriba p{
+.perfil-arriba p {
     font-size: 20px;
     color: rgb(218, 214, 214);
     font-weight: 100px;
     padding: 30px;
 }
 
-.perfil-arriba button{
+.perfil-arriba button {
     font-size: 20px;
     padding: 20px;
     background-color: black;
@@ -47,9 +47,12 @@
     border-color: white;
 }
 
+.cv img{
+    width: 75%;
+}
 
 
-.accordion-body{
+.accordion-body {
 
     font-weight: 500;
     padding: 100px;
@@ -74,5 +77,74 @@
 
 .max-w-screen-sm {
     max-width: 640px;
+}
+
+@media (max-width: 600px) and (min-width: 300px) {
+    .perfil-arriba h1 {
+        font-size: 40px;
+
+    }
+
+    .author-title {
+        position: relative;
+        right: 450px;
+    }
+
+    .author {
+        position: relative;
+        right: 45px;
+    }
+
+    .author img {
+        width: 75%;
+    }
+    .card-grid{
+        padding: 0;
+        gap: 0;
+    }
+
+    .cv img{
+        width: 600px;
+        position: relative;
+        right: 251px;
+    }
+}
+
+@media (max-width:895px) and (min-width: 600px) {
+    .author-title {
+        position: relative;
+        right: 400px;
+    }
+
+    .author {
+        position: relative;
+        right: 25px;
+    }
+}
+
+@media (min-width:895px) and (max-width: 1024px) {
+    .author-title {
+        position: relative;
+        right: 300px;
+    }
+
+    .author {
+        position: relative;
+        right: 50px;
+    }
+    
+}
+
+@media (min-width:1024px) and (max-width:1500px){
+    .author-title {
+        position: relative;
+        right: 100px;
+    }
+
+    .author {
+        position: relative;
+        right: 25px;
+    }
+    
 }
 
