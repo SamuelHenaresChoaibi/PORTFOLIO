@@ -30,72 +30,59 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link href="./output.css" rel="stylesheet">
-
-</head>
 
 <body>
 
 
-
-  <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><b>Samuel Henares Choaibi</b></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a id="Biografía" class="nav-link active" aria-current="page" href="#">Biografía</a>
-          </li>
-          <li class="nav-item">
-            <a id="CV" class="nav-link active" aria-current="page" href="#">CV</a>
-          </li>
-          <li class="nav-item dropdown">
-          </li>
-          <li class="nav-item">
-            <a id="Proyectos" class="nav-link active" aria-current="page" href="#">Proyectos futuros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"></a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-        </form>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="left">
+        <a href="#about-section">Samuel Henares Choaibi</a>
       </div>
-    </div>
-  </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+
+      <div class="right collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#sobremi-section">Sobre mí</a></li>
+       <li class="nav-item"><a class="nav-link active" href="#projects-section">Proyectos</a></li> 
+        <li class="nav-item"><a class="nav-link active" href="#skills-section">Skills</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#deja-mensaje-section">Deja un mensaje!</a></li>
+      </ul></div>
+    </nav>
+
+    
+  </header>
+
 
 
   <!-- Perfil e información -->
   <div class="perfil-arriba">
-    <div class="author-title">
-      <div class="author">
-        <img src="Imagenes/author.png" alt="Authpr">
-      </div>
-      <div class="flex min-h-screen bg-[#161513]">
+    <div class="text-center">
+      <div class="author-title">
+        <div class="author">
+          <img src="Imagenes/author.png" alt="Authpr">
+        </div>
         <div class="mx-auto">
           <h1 class="max-w-screen-sm text-center text-[55px] font-extrabold text-white">
             Desarrollo de <br />
             Aplicaciones <span
-              class="text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">Multiplataforma</span>
+              id="degrant-color">Multiplataforma</span>
           </h1>
         </div>
       </div>
-    </div>
 
-    <p class="text-center">Me llamo Samuel Henares Choaibi, estudiante del CFGS de DAM, o más conocido como
-      Desarrollo de Aplicaciones Multiplataforma. Estoy estudiando el primer año del grado, donde estoy
-      aprendiendo
-      conceptos fundamentales sobre el desarrollo de software, diseño de aplicaciones, bases de datos y
-      programación
-      en diversos lenguajes como Java, JavaScript, SQL...</p>
-    <div class="text-center">
-      <button class="font-extrabold">Contacto</button>
-      <button class="font-extrabold">CV en PDF</button>
+      <p class="text-center">Me llamo <b>Samuel Henares Choaibi</b>, estudiante del CFGS de DAM, o más conocido como
+        Desarrollo de Aplicaciones Multiplataforma. Estoy estudiando el primer año del grado, donde estoy
+        aprendiendo
+        conceptos fundamentales sobre el desarrollo de software, diseño de aplicaciones, bases de datos y
+        programación
+        en diversos lenguajes como <b>Java, JavaScript, SQL...</b></p>
+      <div class="botones">
+        <button><a href="#contacto">Contacto</a></button>
+        <button><a href="...">CV en PDF</a></button>
+      </div>
     </div>
   </div>
 
@@ -152,7 +139,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+  </div>
 
   <!-- Cards -->
   <div class="card-grid">
@@ -195,45 +182,33 @@
 
 
   <!-- Accordion -->
-  <!-- CV -->
-  <div class="accordion" id="accordionExample">
+  <!-- Sobre mí -->
+   <div id="sobremi-section"></div>
+  <div class="accordion" id="accordionExample sobremi-section">
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
           aria-expanded="true" aria-controls="collapseOne">
-          <b>CV</b>
+          <b>Sobre mí</b>
         </button>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-        <div class="cv">
-          <img src="Imagenes/CV Samuel Henares Choaibi.jpg" alt="CV">
-        </div>
-      </div>
-    </div>
-
-    <!-- Biografía -->
-
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-          aria-expanded="false" aria-controls="collapseTwo">
-          <b>Biografía</b>
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
           <p>Me llamo <b>Samuel Henares Choaibi</b>, estudiante del CFGS de DAM, o más conocido como Desarrollo de
             Aplicaciones
             Multiplataforma. Estoy estudiando el primer año del grado, donde estoy aprendiendo conceptos fundamentales
-            sobre el desarrollo de software, diseño de aplicaciones, bases de datos y programación en diversos lenguajes
+            sobre el desarrollo de software, diseño de aplicaciones, bases de datos y programación en diversos
+            lenguajes
             como <b>Java, JavaScript y SQL</b>.</p>
 
           <p>Desde siempre, me ha apasionado la tecnología y la manera en que las aplicaciones pueden transformar la
             vida
-            cotidiana. Mi objetivo es convertirme en un desarrollador versátil, capaz de crear soluciones innovadoras y
+            cotidiana. Mi objetivo es convertirme en un desarrollador versátil, capaz de crear soluciones innovadoras
+            y
             adaptables para diferentes plataformas y dispositivos.</p>
 
-          <p>Además, estoy trabajando en un proyecto personal que combina mi pasión por los videojuegos y la tecnología.
+          <p>Además, estoy trabajando en un proyecto personal que combina mi pasión por los videojuegos y la
+            tecnología.
             Estoy diseñando un emulador de consolas que permita ejecutar y cambiar entre diferentes plataformas y
             videojuegos de manera eficiente. Para ello, planeo utilizar una Raspberry Pi como base, aplicando los
             conocimientos adquiridos durante mi formación y explorando nuevos desafíos técnicos.</p>
@@ -253,55 +228,129 @@
       </div>
     </div>
 
-    <!-- Skills -->
-
-
-    <div class="accordion-item">
+    <!-- Proyectos -->
+    <div class="accordion-item" id="projects-section">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <b>Skills</b>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          <b>Proyectos</b>
         </button>
       </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          <h3><strong>Conocimientos informáticos</strong></h3>
           <ul>
-            <li>Java
-            </li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Python</li>
-            <li>mySQL</li>
-            <li>Buenas prácticas con Visual Studio Code, IntelliJ IDEA Community, GitHub Desktop, PyCharm y NetBeans
-            </li>
-            <li>Hoja de Cálculo</li>
-            <li>Comandos básicos en terminal Linux</li>
-            <li>Comandos básicos en terminal Windows</li>
-          </ul>
+            <li><strong>Software para Emular Videojuegos: </strong> uno de mis proyectos principales en los que estoy
+              trabajando es en hacer un software o programa para ordenador principalmente, el cual sea capaz de emular
+              videojuegos antiguos retro como los de la Nintendo 64, GameCube, Wii, Xbox, PSP... el cual la interfaz
+              estaría programada en C++ o en C#, preferiblemente en C++. Tras acabarlo en PC, me gustaría llevarlo a una
+              consola portátil para poder llevarlo a todos lados con sus botones, jostiycks...</li>
+            <br>
+            <li><strong>Software con herramientas de Hacking: </strong>el hacking y la ciberseguridad son de las cosas
+              que más me gustan, así que ya que estoy en el grado superior de DAM y aprenderé a hacer aplicaciones
+              multiplataforma, quería crear un programa para Linux que incorporase todas las herramientas de Kali Linux
+              en un solo programa con una consola incorporada. Este proyecto sueno complejo y por ahora lo dejaré para
+              más adelante, ya que me quiero enfocar en el emulador, pero también tengo ganas de realizar este proyecto
+              en móvil.</li>
+            <br>
 
-          <br>
-          <h3><strong>Habilidades</strong></h3>
-          <ul>
-            <li>Liderazgo</li>
-            <li>Cálculo rápido</li>
-            <li>Buena lógica y razonamiento</li>
-            <li>Compañerismo</li>
-            <li>Trabajo en equipo</li>
-            <li>Responsable</li>
-            <li>Paciente</li>
-            <li>Tranquilo</li>
-          </ul>
+            <li><strong>Robot con IA: </strong>me gustan mucho los robots, y pensé en hacer este proyecto sobretodo para
+              aprender a programar una IA y hacer un programa que sea capaz de controlar al robot remotamente. No
+              obstante, me falta dinero y hardware para construir el robot, pero se puede realizar la aplicación y la IA
+              con Python, C++, Rust, entr otros.</li>
+            <br>
 
+            <li><strong>Portafolio mejorado con JavaScript: </strong>ahora estoy realizando un portafolio, pero me
+              gistaría hacer uno mejor desde 0 con HTML, CSS y JavaScript, sin Bootstrap ni Tailwind para aprender a
+              programar más con CSS y JavaScript.</li>
+            <br>
+
+            <li><strong>Página web propia de mi futura empresa: </strong>aún no tengo pensado en que tipo de empresa
+              hacer, miraré de hacer una empresa de informática que abarque muchos campos como el desarrollo web, el
+              desarrollo de aplicaciones multiplataforma, ciberseguridad... Aunque sinó también me gustaría crear una
+              empresa de automoción o mi propia marca de ropa, y me gustaría hacer mi propia página web desde 0 con
+              HTML, CSS y JavaScript.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+
+    <div id="skills-section">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <b>Skills</b>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h3><strong>Conocimientos informáticos</strong></h3>
+            <ul>
+              <li>Java
+              </li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Python</li>
+              <li>mySQL</li>
+              <li>Buenas prácticas con Visual Studio Code, IntelliJ IDEA Community, GitHub Desktop, PyCharm y NetBeans
+              </li>
+              <li>Hoja de Cálculo</li>
+              <li>Comandos básicos en terminal Linux</li>
+              <li>Comandos básicos en terminal Windows</li>
+            </ul>
+
+            <br>
+            <h3><strong>Habilidades</strong></h3>
+            <ul>
+              <li>Liderazgo</li>
+              <li>Cálculo rápido</li>
+              <li>Buena lógica y razonamiento</li>
+              <li>Compañerismo</li>
+              <li>Trabajo en equipo</li>
+              <li>Responsable</li>
+              <li>Paciente</li>
+              <li>Tranquilo</li>
+            </ul>
+
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div id="deja-mensaje-section">
+    <div class="mb-3">
+      <h2>¡Envía tu mensaje!</h2>
+      <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  </div>
+
+  <!-- Footer y contactos -->
+  <footer id="contacto">
+    <div id="social-media">
+      <a href="..."><img src="Imagenes/tik-tok.png" alt="tik-tok"></a>
+      <a href="..."><img src="Imagenes/linkedin.png" alt="linkedin"></a>
+      <a href="..."><img src="Imagenes/gorjeo.png" alt="x"></a>
+      <a href="..."><img src="Imagenes/instagram.png" alt="instagram"></a>
+
+    </div>
+    <p><strong>&copy; 2025 Samuel Henares Choaibi. All Rights Reserved.</strong></p>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 
 </html>
