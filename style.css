@@ -1,4 +1,15 @@
-body{
+:root {
+    /* Definición de variables CSS para colores, tamaños y efectos */
+    --color-primario: rgba(38, 38, 38, 0.9);
+    --color-menu: rgba(43, 42, 42, 0.9);
+    --filtro: blur(5px);
+    --altura_header: 5rem;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
+
+body {
+    /* Animación de entrada para el cuerpo de la página */
     animation-name: entrada;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
@@ -6,49 +17,85 @@ body{
 }
 
 nav {
-    background-color: #bfd6c4;
+    /* Estilo del menú de navegación */
     display: flex;
     justify-content: space-between;
     padding: 0 3.125rem;
-    height: 5rem;
+    height: var(--altura_header);
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(38, 38, 38, 0.9);
+    background-color: var(--color-primario);
     backdrop-filter: blur(5px);
-}
-
-nav .left a {
-    text-decoration: none;
     color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
 }
 
-nav .right a {
+nav a {
+    /* Estilo para los enlaces en el menú de navegación */
     text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0 0.625rem;
 }
 
-nav .right a:hover {
-    transform: scale(1.5);
-    transition: transform 0.3s ease-in-out;
+nav ol,
+ul {
+    /* Eliminación de estilo de lista por defecto */
+    list-style: none;
 }
 
-nav a{
-    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+nav h1 {
+    /* Ajuste del título h1 en nav */
+    font-size: 25px;
 }
 
-nav .right a:hover{
-    transition: scale(1.1);
-    color: burlywood;
+.header {
+    /* Estilo para el encabezado */
+    height: var(--altura_header);
+    background-color: var(--color_primario);
 }
 
+.menu_hamburguesa {
+    /* Estilo para el menú hamburguesa (oculto por defecto) */
+    display: none;
+}
+
+.menu_hamburguesa:checked+.ul_links {
+    /* Estilo para mostrar el menú al seleccionar el checkbox */
+    height: calc(100vh - var(--altura_header));
+    background-color: var(--color-menu);
+}
+
+.ul_links {
+    /* Estilo para el menú desplegable */
+    width: 100%;
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    transition: all .3s;
+}
+
+.link {
+    /* Estilo para los enlaces en el menú */
+    font-size: 3em;
+    color: var(--color_blanco);
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+.link:hover {
+    /* Efecto hover para los enlaces */
+    transform: scale(1.05);
+    color: beige;
+}
+
+/* Estilos para secciones específicas */
 #about-section {
     min-height: 100vh;
     flex-direction: column;
@@ -60,20 +107,22 @@ nav .right a:hover{
     gap: 0.5rem;
 }
 
-#about-section h2 {
+#sobremi-section h2 {
     margin-bottom: 1rem;
     font-size: 2.75rem;
     font-weight: 700;
 }
 
-#degrant-color{
+#degrant-color {
+    /* Estilo para el texto con degradado */
     font-size: 60px;
     background: linear-gradient(to right, #fa4261, #f39762, #d5aa10);
     background-size: cover;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;}
+    -webkit-text-fill-color: transparent;
+}
 
-
+/* Estilos para la cuadrícula de tarjetas */
 .card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -81,33 +130,35 @@ nav .right a:hover{
     gap: 25px;
 }
 
-.card{
+.card {
+    /* Efecto de transformación para las tarjetas */
     transition: transform 0.5s ease-in-out;
 }
 
-.card:hover{
+.card:hover {
+    /* Efecto hover para las tarjetas */
     transform: scale(1.05);
 }
 
-.card a{
+.card a {
+    /* Efecto de transformación y color para los enlaces de las tarjetas */
     transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 
-.card a:hover{
-    transform: scale(1.05); 
+.card a:hover {
+    /* Efecto hover para los enlaces de las tarjetas */
+    transform: scale(1.05);
     background-color: black;
     border-color: black;
 }
 
 .card-title {
+    /* Estilo para el título de las tarjetas */
     font-weight: bolder;
     padding: 0;
 }
 
-.accordion-item img {
-    padding-left: 250px;
-}
-
+/* Estilos para la sección de perfil */
 .perfil-arriba {
     display: grid;
     grid-template-columns: 1fr;
@@ -136,6 +187,7 @@ nav .right a:hover{
     padding: 30px;
 }
 
+/* Estilos para los botones */
 .botones button {
     font-size: 20px;
     padding: 20px;
@@ -144,41 +196,43 @@ nav .right a:hover{
     border-radius: 50px;
     font-weight: 300px;
     border-color: white;
-    transition: background-color 0.7s ease-in-out, border-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out;    
-
+    transition: background-color 0.7s ease-in-out, border-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.botones button:hover{
+.botones button:hover {
+    /* Efecto hover para los botones */
     transform: scale(1.05);
     background-color: white;
     border-color: black;
     color: black;
 }
 
-.botones a{
+.botones a {
+    /* Estilo para los enlaces en los botones */
     text-decoration: none;
     color: white;
     transition: color 0.2s ease-in-out;
 }
 
-.botones a:hover{
+.botones a:hover {
+    /* Efecto hover para los enlaces en los botones */
     color: black;
 }
 
 .cv img {
+    /* Estilo para la imagen del CV */
     width: 75%;
 }
 
-
+/* Estilos para el cuerpo del acordeón */
 .accordion-body {
-
     font-weight: 500;
     padding: 100px;
 }
 
+/* Clases de utilidad */
 .text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+    color: rgb(255 255 255);
 }
 
 .font-extrabold {
@@ -197,21 +251,25 @@ nav .right a:hover{
     max-width: 640px;
 }
 
+/* Estilo para el autor */
 .author {
     position: relative;
     right: 575px;
     transition: transform 0.5s ease-in-out;
 }
 
-.author:hover{
+.author:hover {
+    /* Efecto hover para el autor */
     transform: scale(1.02);
 }
 
-#deja-mensaje-section{
-    border-color:black ;
+/* Estilo para la sección de mensajes */
+#deja-mensaje-section {
+    border-color: black;
     padding: 50px;
 }
 
+/* Estilo para el pie de página */
 footer {
     background-color: #909090;
     color: #fff;
@@ -220,28 +278,39 @@ footer {
     font-size: 0.875rem;
 }
 
-#social-media{
+/* Estilo para las redes sociales */
+#social-media {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     column-width: 20%;
     padding: 25px;
-
 }
 
-#social-media img{
+#social-media img {
     width: 35%;
-        transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
-#social-media img:hover{
+#social-media img:hover {
+    /* Efecto hover para las imágenes de redes sociales */
     transform: scale(1.5);
 }
 
+/* Media queries para adaptaciones responsivas */
 @media (max-width: 600px) and (min-width: 300px) {
+
+    /* Estilos para pantallas pequeñas */
+    nav h1 {
+        font-size: 25px;
+    }
+
+    .link {
+        font-size: 20px;
+    }
+
     .perfil-arriba h1 {
         font-size: 40px;
-
     }
 
     .author-title {
@@ -258,9 +327,15 @@ footer {
         width: 75%;
     }
 
+    #degrant-color {
+        font-size: 40px;
+    }
+
     .card-grid {
-        padding: 0;
-        gap: 0;
+        padding: 20px;
+        gap: 25px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
     .cv img {
@@ -269,14 +344,14 @@ footer {
         right: 251px;
     }
 
-    #social-media img{
+    #social-media img {
         width: 35%;
-        
     }
-    
 }
 
-@media (max-width:895px) and (min-width: 600px) {
+@media (max-width: 895px) and (min-width: 600px) {
+
+    /* Estilos para pantallas medianas */
     .author-title {
         position: relative;
         right: 450px;
@@ -286,13 +361,15 @@ footer {
         position: relative;
         right: 100px;
     }
-    #social-media img{
+
+    #social-media img {
         width: 25%;
-        
     }
 }
 
-@media (min-width:895px) and (max-width: 1024px) {
+@media (min-width: 895px) and (max-width: 1024px) {
+
+    /* Estilos para pantallas grandes */
     .author-title {
         position: relative;
         right: 350px;
@@ -302,14 +379,15 @@ footer {
         position: relative;
         right: 200px;
     }
-    #social-media img{
-        width: 20%;
-        
-    }
 
+    #social-media img {
+        width: 20%;
+    }
 }
 
-@media (min-width:1024px) and (max-width:1500px) {
+@media (min-width: 1024px) and (max-width: 1500px) {
+
+    /* Ajustes para pantallas muy grandes */
     .author-title {
         position: relative;
         right: 300px;
@@ -320,21 +398,22 @@ footer {
         right: 250px;
     }
 
-    #social-media img{
+    #social-media img {
         width: 20%;
-        
     }
 }
 
-    @media (min-width:1500px) {
-        #social-media img{
-            width: 15%;
-            
-        }
+@media (min-width: 1500px) {
 
+    /* Estilo para pantallas extra grandes */
+    #social-media img {
+        width: 15%;
+    }
 }
 
-@keyframes entrada{
+@keyframes entrada {
+
+    /* Animación de entrada para el cuerpo */
     from {
         margin-top: px;
         opacity: 100%;
@@ -343,6 +422,5 @@ footer {
     to {
         margin-top: 1250px;
         opacity: 0%;
-
     }
 }

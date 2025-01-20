@@ -34,26 +34,46 @@
 <body>
 
 
-  <!-- Navbar -->
+  <!-- Navbar y menú hamburguesa -->
   <header>
     <nav>
-      <div class="left">
-        <a href="#about-section">Samuel Henares Choaibi</a>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <h1><b>Samuel Henares Choaibi</b></h1>
 
-      <div class="right collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="#sobremi-section">Sobre mí</a></li>
-       <li class="nav-item"><a class="nav-link active" href="#projects-section">Proyectos</a></li> 
-        <li class="nav-item"><a class="nav-link active" href="#skills-section">Skills</a></li>
-        <li class="nav-item"><a class="nav-link active" href="#deja-mensaje-section">Deja un mensaje!</a></li>
-      </ul></div>
+        <label for="menu_hamburguesa">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="list_icon"
+                viewBox="0 0 16 16"
+            >
+                <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+            </svg>
+        </label>
+
+        <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+
+        <ul class="ul_links">
+            <li class="li_links">
+                <a href="#sobremi-section" class="link">Sobre mi</a>
+            </li>
+            <li class="li_links">
+                <a href="#projects-section" class="link">Proyectos</a>
+            </li>
+            <li class="li_links">
+                <a href="#skills-section" class="link">Skills</a>
+            </li>
+
+            <li class="li_links">
+              <a href="#deja-mensaje-section" class="link">¡Deja un mensaje!</a>
+          </li>
+        </ul>
     </nav>
-
-    
-  </header>
+</header>
 
 
 
@@ -67,8 +87,7 @@
         <div class="mx-auto">
           <h1 class="max-w-screen-sm text-center text-[55px] font-extrabold text-white">
             Desarrollo de <br />
-            Aplicaciones <span
-              id="degrant-color">Multiplataforma</span>
+            Aplicaciones <span id="degrant-color">Multiplataforma</span>
           </h1>
         </div>
       </div>
@@ -183,7 +202,7 @@
 
   <!-- Accordion -->
   <!-- Sobre mí -->
-   <div id="sobremi-section"></div>
+  <div id="sobremi-section"></div>
   <div class="accordion" id="accordionExample sobremi-section">
     <div class="accordion-item">
       <h2 class="accordion-header">
