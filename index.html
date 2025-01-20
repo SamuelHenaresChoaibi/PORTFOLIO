@@ -92,7 +92,7 @@
         en diversos lenguajes como <b>Java, JavaScript, SQL...</b></p>
       <div class="botones">
         <button><a href="#contacto">Contacto</a></button>
-        <button><a href="...">CV en PDF</a></button>
+        <button><a href="CV Samuel Henares Choaibi.pdf">CV en PDF</a></button>
       </div>
     </div>
   </div>
@@ -160,8 +160,8 @@
         <h5 class="card-title">¿Quién soy?</h5>
         <p class="card-text">Mi nombre es Samuel Henares Choaibi, estudiante de primer año en Grado Superior de
           Desarrollo de Aplicaciones Multiplataforma en el CIFP Pau Casesnoves.</p>
-        <a href="#" class="btn btn-primary">Biografía</a>
-        <a href="#" class="btn btn-primary">CV</a>
+        <a href="#sobremi-section" class="btn btn-primary">Biografía</a>
+        <a href="CV Samuel Henares Choaibi.pdf" class="btn btn-primary">CV</a>
       </div>
     </div>
 
@@ -333,15 +333,18 @@
 
   <!-- Contactar con autor -->
   <div id="deja-mensaje-section">
-    <div class="mb-3">
-      <h2>¡Envía tu mensaje!</h2>
-      <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
+    <form action="https://formsubmit.co/samuelhenaresch@gmail.com" method="post" enctype="text/plain">
+      <div class="mb-3">
+        <h2>¡Envía tu mensaje!</h2>
+        <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <input id="boton-enviar" type="submit" value="Enviar">
+    </form>
   </div>
 
   <!-- Footer y contactos -->
