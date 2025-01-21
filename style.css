@@ -162,7 +162,9 @@ nav h1 {
 .perfil-arriba {
     display: grid;
     grid-template-columns: 1fr;
-    background-image: url("Imagenes/code.gif");
+    background-image: url("Imagenes/fondo.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
     justify-content: center;
     align-items: center;
     padding: 50px;
